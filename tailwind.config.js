@@ -7,9 +7,9 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#29E0A9',
-          dark: '#05C293',
-          light: '#6FFFD4',
+          DEFAULT: '#3B82F6', // Azul claro vibrante (similar ao brilho do verde anterior)
+          dark: '#2563EB',
+          light: '#93C5FD',
         },
         background: '#F8FAFC',
       },

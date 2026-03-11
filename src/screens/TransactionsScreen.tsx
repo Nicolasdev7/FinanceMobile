@@ -20,7 +20,7 @@ const TRANSACTIONS_DATA = [
   {
     title: '07 de Março',
     data: [
-      { id: '4', title: 'Freelance', time: '14:00', amount: '+ R$ 850,00', type: 'income', icon: ArrowUpRight, color: 'bg-green-50', iconColor: '#10B981' },
+      { id: '4', title: 'Freelance', time: '14:00', amount: '+ R$ 850,00', type: 'income', icon: ArrowUpRight, color: 'bg-blue-50', iconColor: '#3B82F6' },
     ]
   }
 ];
@@ -59,7 +59,7 @@ export default function TransactionsScreen() {
                 <Text className="text-gray-400 text-xs font-medium mt-0.5">{item.time}</Text>
               </View>
             </View>
-            <Text className={`font-bold text-base ${item.type === 'income' ? 'text-green-600' : 'text-red-500'}`}>
+            <Text className={`font-bold text-base ${item.type === 'income' ? 'text-blue-600' : 'text-red-500'}`}>
               {item.amount}
             </Text>
           </View>

@@ -20,7 +20,7 @@ export default function ProfileScreen() {
         }}
       >
         <LinearGradient
-          colors={['#10B981', '#059669']}
+          colors={['#3B82F6', '#2563EB']}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           style={{ paddingHorizontal: 24, paddingTop: 20, paddingBottom: 24 }}
@@ -38,7 +38,7 @@ export default function ProfileScreen() {
             </View>
             <View className="flex-1 ml-4">
               <Text className="text-white text-xl font-bold">Nicolas</Text>
-              <Text className="text-green-50/90 text-sm font-medium mt-1">nicolas@email.com</Text>
+              <Text className="text-blue-50/90 text-sm font-medium mt-1">nicolas@email.com</Text>
             </View>
             <View className="bg-white/15 p-3 rounded-2xl border border-white/10">
               <ChevronRight color="white" size={20} />
