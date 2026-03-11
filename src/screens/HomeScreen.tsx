@@ -19,8 +19,8 @@ export default function HomeScreen({ navigation }: any) {
         >
           <View className="flex-row justify-between items-center mb-8">
             <View>
-              <Text className="text-white text-xl font-bold">Hi, Welcome Back</Text>
-              <Text className="text-blue-100 text-xs mt-0.5">Good Morning</Text>
+              <Text className="text-white text-xl font-bold">Oi, Bem vindo de Volta</Text>
+              <Text className="text-blue-100 text-xs mt-0.5">Bom dia</Text>
             </View>
             <TouchableOpacity 
               onPress={() => navigation.navigate('Notifications')}
@@ -34,7 +34,7 @@ export default function HomeScreen({ navigation }: any) {
             <View className="flex-1">
               <View className="flex-row items-center mb-1">
                 <TrendingUp color="#BFDBFE" size={14} className="mr-1" />
-                <Text className="text-blue-100 text-xs font-medium">Total Balance</Text>
+                <Text className="text-blue-100 text-xs font-medium">Saldo Total</Text>
                 <TouchableOpacity onPress={() => setIsBalanceVisible(!isBalanceVisible)} className="ml-2">
                   {isBalanceVisible ? <Eye size={16} color="#BFDBFE" /> : <EyeOff size={16} color="#BFDBFE" />}
                 </TouchableOpacity>
@@ -47,7 +47,7 @@ export default function HomeScreen({ navigation }: any) {
             <View className="flex-1">
               <View className="flex-row items-center mb-1">
                 <TrendingDown color="#BFDBFE" size={14} className="mr-1" />
-                <Text className="text-blue-100 text-xs font-medium">Total Expense</Text>
+                <Text className="text-blue-100 text-xs font-medium">Total de Gastos</Text>
               </View>
               <Text className="text-blue-100 text-3xl font-bold">
                 {isBalanceVisible ? '-$1,187.40' : '••••••'}
@@ -60,13 +60,13 @@ export default function HomeScreen({ navigation }: any) {
             <View className="bg-white h-4 rounded-full w-[30%] items-center justify-center">
               <Text className="text-[10px] font-bold text-blue-600">30%</Text>
             </View>
-            <Text className="absolute right-4 text-white text-[10px] font-bold">$20,000.00</Text>
+            <Text className="absolute right-4 text-white text-[10px] font-bold">R$20,000.00</Text>
           </View>
           <View className="flex-row items-center">
             <View className="bg-white/20 p-0.5 rounded mr-2">
                <Text className="text-white text-[8px]">✓</Text>
             </View>
-            <Text className="text-blue-100 text-[10px] font-medium">30% Of Your Expenses, Looks Good.</Text>
+            <Text className="text-blue-100 text-[10px] font-medium">30% das suas despesas, parece bom.</Text>
           </View>
         </LinearGradient>
 

@@ -39,24 +39,24 @@ export default function CategoryDetailScreen({ route, navigation }: any) {
             <View className="flex-1">
               <View className="flex-row items-center mb-1">
                 <TrendingUp color="#BFDBFE" size={14} className="mr-1" />
-                <Text className="text-blue-100 text-xs font-medium">Total Balance</Text>
+                <Text className="text-blue-100 text-xs font-medium">Saldo Total</Text>
               </View>
-              <Text className="text-white text-2xl font-bold">$7,783.00</Text>
+              <Text className="text-white text-2xl font-bold">R$7,783.00</Text>
             </View>
             <View className="h-8 w-[1px] bg-white/20 mx-4" />
             <View className="flex-1">
               <View className="flex-row items-center mb-1">
                 <TrendingDown color="#BFDBFE" size={14} className="mr-1" />
-                <Text className="text-blue-100 text-xs font-medium">Total Expense</Text>
+                <Text className="text-blue-100 text-xs font-medium">Total de Gastos</Text>
               </View>
-              <Text className="text-blue-100 text-2xl font-bold">-$1,187.40</Text>
+              <Text className="text-blue-100 text-2xl font-bold">-R$1,187.40</Text>
             </View>
           </View>
 
           <View className="bg-white/20 h-5 rounded-full px-1 justify-center mb-2">
             <View className="bg-white h-3 rounded-full w-[30%]" />
           </View>
-          <Text className="text-blue-100 text-[10px] font-medium">30% Of Your Expenses, Looks Good.</Text>
+          <Text className="text-blue-100 text-[10px] font-medium">30% das suas despesas, parece bom.</Text>
         </LinearGradient>
 
         {/* Expenses List */}
@@ -88,7 +88,7 @@ export default function CategoryDetailScreen({ route, navigation }: any) {
                onPress={() => navigation.navigate('AddExpense')}
                className="bg-[#00D094] py-4 rounded-full items-center shadow-lg shadow-emerald-500/20 mt-2"
              >
-               <Text className="text-white font-bold text-lg">Add Expenses</Text>
+               <Text className="text-white font-bold text-lg">Adicionar Gastos</Text>
              </TouchableOpacity>
           </View>
         </View>

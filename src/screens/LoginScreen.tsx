@@ -23,13 +23,13 @@ export default function LoginScreen({ navigation }: any) {
         colors={['#3B82F6', '#2563EB']}
         className="h-1/3 justify-center items-center"
       >
-        <Text className="text-white text-4xl font-bold">Welcome</Text>
+        <Text className="text-white text-4xl font-bold">Bem vindo</Text>
       </LinearGradient>
 
       <View className="flex-1 -mt-10 bg-white rounded-t-[40px] px-8 pt-10">
         <ScrollView showsVerticalScrollIndicator={false}>
           <View className="mb-6">
-            <Text className="text-gray-700 font-semibold mb-2 ml-1">Username Or Email</Text>
+            <Text className="text-gray-700 font-semibold mb-2 ml-1">Usuario ou Email</Text>
             <View className="bg-blue-50/50 flex-row items-center px-4 py-4 rounded-2xl border border-blue-100">
               <TextInput
                 className="flex-1 text-gray-800"
@@ -43,7 +43,7 @@ export default function LoginScreen({ navigation }: any) {
           </View>
 
           <View className="mb-4">
-            <Text className="text-gray-700 font-semibold mb-2 ml-1">Password</Text>
+            <Text className="text-gray-700 font-semibold mb-2 ml-1">Senha</Text>
             <View className="bg-blue-50/50 flex-row items-center px-4 py-4 rounded-2xl border border-blue-100">
               <TextInput
                 className="flex-1 text-gray-800"
@@ -67,18 +67,18 @@ export default function LoginScreen({ navigation }: any) {
             onPress={handleLogin}
             className="bg-blue-500 py-4 rounded-full items-center shadow-lg shadow-blue-500/30 mb-4"
           >
-            <Text className="text-white font-bold text-lg">Log In</Text>
+            <Text className="text-white font-bold text-lg">Login</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             onPress={() => navigation.navigate('Register')}
             className="bg-blue-50 py-4 rounded-full items-center border border-blue-100 mb-8"
           >
-            <Text className="text-blue-600 font-bold text-lg">Sign Up</Text>
+            <Text className="text-blue-600 font-bold text-lg">Cadastrar</Text>
           </TouchableOpacity>
 
           <View className="items-center mb-8">
-            <Text className="text-gray-400 font-medium mb-6">or sign up with</Text>
+            <Text className="text-gray-400 font-medium mb-6">Ou cadastre-se com</Text>
             <View className="flex-row space-x-6 gap-6">
               <TouchableOpacity className="p-3 border border-gray-100 rounded-full">
                 <Facebook color="#1877F2" size={24} />
@@ -92,9 +92,9 @@ export default function LoginScreen({ navigation }: any) {
           </View>
 
           <View className="flex-row justify-center mb-10">
-            <Text className="text-gray-400">Don't have an account? </Text>
+            <Text className="text-gray-400">Não tem uma conta? </Text>
             <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-              <Text className="text-blue-500 font-bold">Sign Up</Text>
+              <Text className="text-blue-500 font-bold">Cadastrar</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>

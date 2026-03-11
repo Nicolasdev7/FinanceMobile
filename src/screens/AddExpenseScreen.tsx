@@ -17,7 +17,7 @@ export default function AddExpenseScreen({ navigation }: any) {
             <TouchableOpacity onPress={() => navigation.goBack()}>
                <ChevronLeft color="white" size={24} />
             </TouchableOpacity>
-            <Text className="text-white text-xl font-bold">Add Expenses</Text>
+            <Text className="text-white text-xl font-bold">Adicionar Gasto</Text>
             <TouchableOpacity onPress={() => navigation.navigate('Notifications')}>
               <Bell color="white" size={22} />
             </TouchableOpacity>
@@ -30,25 +30,25 @@ export default function AddExpenseScreen({ navigation }: any) {
              
              {/* Date Field */}
              <View className="mb-6">
-                <Text className="text-gray-900 font-bold text-sm mb-3">Date</Text>
+                <Text className="text-gray-900 font-bold text-sm mb-3">Data</Text>
                 <TouchableOpacity className="bg-[#F1F9F6] px-4 py-4 rounded-2xl flex-row justify-between items-center">
-                   <Text className="text-gray-500 font-medium">April 30, 2024</Text>
+                   <Text className="text-gray-500 font-medium">30 de abril de 2024</Text>
                    <Calendar color="#3B82F6" size={20} />
                 </TouchableOpacity>
              </View>
 
              {/* Category Field */}
              <View className="mb-6">
-                <Text className="text-gray-900 font-bold text-sm mb-3">Category</Text>
+                <Text className="text-gray-900 font-bold text-sm mb-3">Categoria</Text>
                 <TouchableOpacity className="bg-[#F1F9F6] px-4 py-4 rounded-2xl flex-row justify-between items-center">
-                   <Text className="text-gray-400 font-medium">Select the category</Text>
+                   <Text className="text-gray-400 font-medium">Selecione a categoria</Text>
                    <ChevronDown color="#3B82F6" size={20} />
                 </TouchableOpacity>
              </View>
 
              {/* Amount Field */}
              <View className="mb-6">
-                <Text className="text-gray-900 font-bold text-sm mb-3">Amount</Text>
+                <Text className="text-gray-900 font-bold text-sm mb-3">Valor</Text>
                 <View className="bg-[#F1F9F6] px-4 py-4 rounded-2xl">
                    <TextInput 
                      placeholder="$26,00" 
@@ -61,7 +61,7 @@ export default function AddExpenseScreen({ navigation }: any) {
 
              {/* Expense Title Field */}
              <View className="mb-6">
-                <Text className="text-gray-900 font-bold text-sm mb-3">Expense Title</Text>
+                <Text className="text-gray-900 font-bold text-sm mb-3">Título do Gasto</Text>
                 <View className="bg-[#F1F9F6] px-4 py-4 rounded-2xl">
                    <TextInput 
                      placeholder="Dinner" 
@@ -88,7 +88,7 @@ export default function AddExpenseScreen({ navigation }: any) {
                onPress={() => navigation.goBack()}
                className="bg-[#00D094] py-4 rounded-full items-center shadow-lg shadow-emerald-500/20"
              >
-               <Text className="text-white font-bold text-lg">Save</Text>
+               <Text className="text-white font-bold text-lg">Salvar</Text>
              </TouchableOpacity>
 
           </View>

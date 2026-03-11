@@ -30,7 +30,7 @@ export default function CategoriesScreen({ navigation }: any) {
             <TouchableOpacity onPress={() => navigation.goBack()}>
                <ChevronLeft color="white" size={24} />
             </TouchableOpacity>
-            <Text className="text-white text-xl font-bold">Categories</Text>
+            <Text className="text-white text-xl font-bold">Categorias</Text>
             <TouchableOpacity onPress={() => navigation.navigate('Notifications')}>
               <Bell color="white" size={22} />
             </TouchableOpacity>
@@ -40,24 +40,24 @@ export default function CategoriesScreen({ navigation }: any) {
             <View className="flex-1">
               <View className="flex-row items-center mb-1">
                 <TrendingUp color="#BFDBFE" size={14} className="mr-1" />
-                <Text className="text-blue-100 text-xs font-medium">Total Balance</Text>
+                <Text className="text-blue-100 text-xs font-medium">Saldo Total</Text>
               </View>
-              <Text className="text-white text-2xl font-bold">$7,783.00</Text>
+              <Text className="text-white text-2xl font-bold">R$7,783.00</Text>
             </View>
             <View className="h-8 w-[1px] bg-white/20 mx-4" />
             <View className="flex-1">
               <View className="flex-row items-center mb-1">
                 <TrendingDown color="#BFDBFE" size={14} className="mr-1" />
-                <Text className="text-blue-100 text-xs font-medium">Total Expense</Text>
+                <Text className="text-blue-100 text-xs font-medium">Total Gastos</Text>
               </View>
-              <Text className="text-blue-100 text-2xl font-bold">-$1,187.40</Text>
+              <Text className="text-blue-100 text-2xl font-bold">-R$1,187.40</Text>
             </View>
           </View>
 
           <View className="bg-white/20 h-5 rounded-full px-1 justify-center mb-2">
             <View className="bg-white h-3 rounded-full w-[30%]" />
           </View>
-          <Text className="text-blue-100 text-[10px] font-medium">30% Of Your Expenses, Looks Good.</Text>
+          <Text className="text-blue-100 text-[10px] font-medium">30% das suas despesas, parece bom.</Text>
         </LinearGradient>
 
         {/* Categories Grid */}
@@ -88,7 +88,7 @@ export default function CategoriesScreen({ navigation }: any) {
             >
               <Plus color="#3B82F6" size={32} strokeWidth={2.5} />
             </View>
-            <Text className="text-gray-900 font-bold text-[12px] mt-2">More</Text>
+            <Text className="text-gray-900 font-bold text-[12px] mt-2">Mais</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -102,7 +102,7 @@ export default function CategoriesScreen({ navigation }: any) {
       >
         <View className="flex-1 bg-black/40 justify-center items-center px-10">
           <View className="bg-white w-full rounded-[32px] p-8 items-center shadow-2xl">
-            <Text className="text-gray-900 font-bold text-xl mb-6">New Category</Text>
+            <Text className="text-gray-900 font-bold text-xl mb-6">Nova Categoria</Text>
             
             <View className="bg-[#F1F9F6] w-full px-4 py-4 rounded-2xl mb-6">
                <TextInput 
@@ -116,14 +116,14 @@ export default function CategoriesScreen({ navigation }: any) {
               onPress={() => setModalVisible(false)}
               className="bg-[#00D094] w-full py-4 rounded-full items-center mb-3 shadow-lg shadow-emerald-500/20"
             >
-              <Text className="text-white font-bold text-lg">Save</Text>
+              <Text className="text-white font-bold text-lg">Salvar</Text>
             </TouchableOpacity>
 
             <TouchableOpacity 
               onPress={() => setModalVisible(false)}
               className="bg-gray-100 w-full py-4 rounded-full items-center"
             >
-              <Text className="text-gray-500 font-bold text-lg">Cancel</Text>
+              <Text className="text-gray-500 font-bold text-lg">Cancelar</Text>
             </TouchableOpacity>
           </View>
         </View>
